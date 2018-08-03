@@ -1,0 +1,54 @@
+{
+    "system": {
+        "dataset": "MSCOCO",
+        "batch_size": 49,
+        "sampling_function": "kp_detection",
+
+        "train_split": "trainval",
+        "val_split": "minival",
+
+        "learning_rate": 0.00025,
+        "decay_rate": 10,
+
+        "val_iter": 100,
+
+        "opt_algo": "adam",
+        "prefetch_size": 5,
+
+        "max_iter": 500000,
+        "stepsize": 450000,
+        "snapshot": 5000,
+
+        "chunk_sizes": [4, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+
+        "data_dir": "./data"
+    },
+    
+    "db": {
+        "rand_scale_min": 0.6,
+        "rand_scale_max": 1.4,
+        "rand_scale_step": 0.1,
+        "rand_scales": null,
+
+        "rand_crop": true,
+        "rand_color": true,
+
+        "border": 128,
+        "gaussian_bump": true,
+
+        "input_size": [511, 511],
+        "output_sizes": [[128, 128]],
+
+        "test_scales": [0.5, 0.75, 1, 1.25, 1.5],
+
+        "top_k": 100,
+        "categories": 80,
+        "ae_threshold": 0.5,
+        "nms_threshold": 0.5,
+
+        "merge_bbox": true,
+        "weight_exp": 10,
+
+        "max_per_image": 100
+    }
+}

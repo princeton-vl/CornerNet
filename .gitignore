@@ -1,0 +1,7 @@
+cache/
+results/
+
+*.swp
+
+*.pyc
+*.o*
