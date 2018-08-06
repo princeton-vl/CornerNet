@@ -1,7 +1,7 @@
 # CornerNet: Training and Evaluation Code
 Code for reproducing the results in the following paper:
 
-**CornerNet: Detecting Objects as Paired Keypoints**  
+[**CornerNet: Detecting Objects as Paired Keypoints**](https://arxiv.org/abs/1808.01244)  
 Hei Law, Jia Deng  
 *European Conference on Computer Vision (ECCV), 2018*
 
