@@ -35,6 +35,7 @@
 
         "border": 128,
         "gaussian_bump": true,
+        "gaussian_iou": 0.3,
 
         "input_size": [511, 511],
         "output_sizes": [[128, 128]],

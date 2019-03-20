@@ -21,29 +21,29 @@ Our current implementation only supports GPU so you need a GPU and need to have 
 ### Compiling Corner Pooling Layers
 You need to compile the C++ implementation of corner pooling layers. 
 ```
-cd <CornetNet dir>/models/py_utils/_cpools/
+cd <CornerNet dir>/models/py_utils/_cpools/
 python setup.py install --user
 ```
 
 ### Compiling NMS
 You also need to compile the NMS code (originally from [Faster R-CNN](https://github.com/rbgirshick/py-faster-rcnn/blob/master/lib/nms/cpu_nms.pyx) and [Soft-NMS](https://github.com/bharatsingh430/soft-nms/blob/master/lib/nms/cpu_nms.pyx)).
 ```
-cd <CornetNet dir>/external
+cd <CornerNet dir>/external
 make
 ```
 
 ### Installing MS COCO APIs
 You also need to install the MS COCO APIs.
 ```
-cd <CornetNet dir>/data
+cd <CornerNet dir>/data
 git clone git@github.com:cocodataset/cocoapi.git coco
-cd <CornetNet dir>/data/coco/PythonAPI
+cd <CornerNet dir>/data/coco/PythonAPI
 make
 ```
 
 ### Downloading MS COCO Data
-- Download the training/validation split we use in our paper from [here](https://drive.google.com/file/d/1dop4188xo5lXDkGtOZUzy2SHOD_COXz4/view?usp=sharing) (originally from [Faster R-CNN](https://github.com/rbgirshick/py-faster-rcnn/tree/master/data))
-- Unzip the file and place `annotations` under `<CornetNet dir>/data/coco`
+- Download the training/validation split we use in our paper from [here](https://drive.google.com/open?id=16bbMAyykdZr2_7afiMZrvvn4xkYa-LYk) (originally from [Faster R-CNN](https://github.com/rbgirshick/py-faster-rcnn/tree/master/data))
+- Unzip the file and place `annotations` under `<CornerNet dir>/data/coco`
 - Download the images (2014 Train, 2014 Val, 2017 Test) from [here](http://cocodataset.org/#download)
 - Create 3 directories, `trainval2014`, `minival2014` and `testdev2017`, under `<CornerNet dir>/data/coco/images/`
 - Copy the training/validation/testing images to the corresponding directories according to the annotation files
