@@ -42,7 +42,7 @@ make
 ```
 
 ### Downloading MS COCO Data
-- Download the training/validation split we use in our paper from [here](https://drive.google.com/open?id=16bbMAyykdZr2_7afiMZrvvn4xkYa-LYk) (originally from [Faster R-CNN](https://github.com/rbgirshick/py-faster-rcnn/tree/master/data))
+- Download the training/validation split we use in our paper from [here](https://drive.google.com/file/d/1dop4188xo5lXDkGtOZUzy2SHOD_COXz4/view?usp=sharing) (originally from [Faster R-CNN](https://github.com/rbgirshick/py-faster-rcnn/tree/master/data))
 - Unzip the file and place `annotations` under `<CornerNet dir>/data/coco`
 - Download the images (2014 Train, 2014 Val, 2017 Test) from [here](http://cocodataset.org/#download)
 - Create 3 directories, `trainval2014`, `minival2014` and `testdev2017`, under `<CornerNet dir>/data/coco/images/`
@@ -62,7 +62,7 @@ To train CornerNet:
 ```
 python train.py CornerNet
 ```
-We also provide a trained model for `CornerNet`, which is trained for 500k iterations using 10 Titan X (PASCAL) GPUs. You can download it from [here](https://drive.google.com/file/d/1UHjVzSG27Ms0VfSFeGYJ2h2AYZ6d4Le_/view?usp=sharing) and put it under `<CornerNet dir>/cache/nnet/CornerNet` (You may need to create this directory by yourself if it does not exist). If you want to train you own CornerNet, please adjust the batch size in `CornerNet.json` to accommodate the number of GPUs that are available to you.
+We also provide a trained model for `CornerNet`, which is trained for 500k iterations using 10 Titan X (PASCAL) GPUs. You can download it from [here](https://drive.google.com/open?id=16bbMAyykdZr2_7afiMZrvvn4xkYa-LYk) and put it under `<CornerNet dir>/cache/nnet/CornerNet` (You may need to create this directory by yourself if it does not exist). If you want to train you own CornerNet, please adjust the batch size in `CornerNet.json` to accommodate the number of GPUs that are available to you.
 
 To use the trained model:
 ```
