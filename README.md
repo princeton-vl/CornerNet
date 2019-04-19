@@ -1,4 +1,6 @@
 # CornerNet: Training and Evaluation Code
+Update (4/18/2019): please check out [CornerNet-Lite](https://github.com/princeton-vl/CornerNet-Lite), more efficient variants of CornerNet
+
 Code for reproducing the results in the following paper:
 
 [**CornerNet: Detecting Objects as Paired Keypoints**](https://arxiv.org/abs/1808.01244)  
